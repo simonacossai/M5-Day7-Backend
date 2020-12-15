@@ -13,7 +13,7 @@ const {
 
 const server = express()
 
-const port = process.env.PORT || 3001 // the fallback is for local development, heroku will use his own port, something like 12312, because imagine how many processes are running on the same machine there
+const port = process.env.PORT || 3001 
 
 server.use(express.json())
 
@@ -25,21 +25,17 @@ const whiteList =
 const corsOptions = {
   origin: function (origin, callback) {
     if (whiteList.indexOf(origin) !== -1) {
-      // allowed
       callback(null, true)
     } else {
-      // Not allowed
       callback(new Error("NOT ALLOWED - CORS ISSUES"))
     }
   },
 }
-server.use(cors(corsOptions)) // CROSS ORIGIN RESOURCE SHARING
+server.use(cors(corsOptions)) 
 
-//ROUTES
 
 server.use("/books", booksRoutes)
 
-// ERROR HANDLERS
 server.use(badRequestHandler)
 server.use(notFoundHandler)
 server.use(genericErrorHandler)
