@@ -47,7 +47,6 @@ booksRouter.post("/", async (req, res, next) => {
   try {
    
       const books = await getBooks()
-
       const asinFound = books.find(book => book.asin === req.body.asin)
 
       if (asinFound) {
@@ -267,3 +266,5 @@ booksRouter.get("/:asin/comments", async (req, res, next) => {
   )
   
 module.exports = booksRouter
+
+
