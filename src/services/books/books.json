@@ -1,1 +1,25 @@
-[{"asin":"1940026091","title":"Pandemic (The Extinction Files, Book)","img":"https://images-na.ssl-images-amazon.com/images/I/91xrEMcvmQL.jpg","price":7.81,"category":"scifi"}]
+[
+    {
+        "asin": "1940026091",
+        "title": "Pandemic (The Extinction Files, Book)",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/91xrEMcvmQL.jpg",
+        "price": 7.81,
+        "category": "scifi",
+        "comments": [
+            {
+                "comment": "I didn't really like it",
+                "rate": "3",
+                "userName": "Simona",
+                "commentID": "36kvthd8kiq4e2jq",
+                "createdAt": "2020-12-15T15:07:39.493Z"
+            },
+            {
+                "comment": "I'm lovin it",
+                "rate": "5",
+                "userName": "John",
+                "commentID": "36kvtcawkiq4eq0g",
+                "createdAt": "2020-12-15T15:08:09.903Z"
+            }
+        ]
+    }
+]
